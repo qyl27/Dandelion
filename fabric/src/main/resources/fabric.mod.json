@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dandelion",
+  "version": "${version}",
+  "name": "Dandelion",
+  "description": "A Minecraft mod replace the dandelion of vanilla.",
+  "authors": [
+    "qyl27"
+  ],
+  "contact": {
+    "homepage": "https://github.com/qyl27/Dandelion",
+    "sources": "https://github.com/qyl27/Dandelion"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cx.rain.mc.dandelion.fabric.DandelionFabric"
+    ]
+  },
+  "mixins": [
+    "dandelion.mixins.json",
+    "dandelion-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1",
+    "architectury": ">=9.1.12"
+  }
+}

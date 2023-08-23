@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/qyl27/Dandelion/issues"
+license = "Apache-2.0"
+
+[[mods]]
+modId = "dandelion"
+version = "${version}"
+displayName = "Dandelion"
+authors = "qyl27"
+description = '''
+A Minecraft mod replace the dandelion of vanilla.
+'''
+#logoFile = ""
+
+[[dependencies.dandelion]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dandelion]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.examplemod]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.1.12,)"
+ordering = "AFTER"
+side = "BOTH"
